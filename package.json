@@ -1,36 +1,28 @@
 {
-  "name": "word-reader",
+  "name": "word-header-text-replacement",
   "version": "1.0.0",
-  "description": "A Node.js app for editing and converting DOCX files to PDF.",
-  "main": "app.js",
+  "description": "A Node.js application for replacing text in Word documents and converting them to PDF.",
+  "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
-    "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-=======
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "export PUPPETEER_SKIP_DOWNLOAD=true && node server.js",
-    "postinstall": "chmod -R +x /opt/render/project/src/.cache/puppeteer/chrome/linux-131.0.6778.85/chrome-linux64/* && echo 'Permissions set!'"
->>>>>>> 9a739516075ed54788785ad9cefc9c0824593b93
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
-  "keywords": ["docx", "pdf", "libreoffice", "nodejs"],
-  "author": "Your Name",
-  "license": "ISC",
   "dependencies": {
-    "@xmldom/xmldom": "^0.9.6",
-    "archiver": "^7.0.1",
-    "body-parser": "^1.20.3",
-    "dotenv": "^16.4.7",
-    "express": "^4.21.2",
-    "he": "^1.2.0",
-    "html-docx-js": "^0.3.1",
-    "html-to-docx": "^1.8.0",
-    "jszip": "^3.10.1",
-    "mammoth": "^1.8.0",
-    "sanitize-html": "^2.13.1",
-    "unzipper": "^0.12.3",
-    "word-extractor": "^1.0.4",
-    "xml2js": "^0.6.2"
-  }
+    "archiver": "^5.3.0",
+    "child_process": "1.0.2",
+    "dotenv": "^16.1.0",
+    "express": "^4.18.2",
+    "fs-extra": "^11.1.0",
+    "path": "^0.12.7",
+    "unzipper": "^0.10.11",
+    "xmldom": "^0.8.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "author": "Nikola J.",
+  "license": "MIT"
 }
-
